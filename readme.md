@@ -48,8 +48,8 @@ Example:
 >>show ip ospf interface<br>
 >>show ver<br>
 
-
-Jeff Fry
+<br><br>
+Jeff Fry<br>
 Fryguy.net
 
 
