@@ -3,7 +3,7 @@ import sys
 from datetime import datetime
 from signal import signal, SIGINT
 from netmiko import ConnectHandler
-from netmiko.ssh_exception import NetMikoTimeoutException, NetMikoAuthenticationException
+from netmiko.ssh_exception import NetMikoTimeoutException, NetMikoAuthenticationException--se--
 import getpass
 import pwinput
 from time import sleep
@@ -185,7 +185,7 @@ def runcommand(net_connect, device, hostoutput, commandlist):
         except:
             hostoutput.write('An error occured \n')
         sleep(2)
-        output = net_connect.write_channel(f'Demo123\n')
+        output = net_connect.write_channel(f'{getpwd1}\n')
         output = net_connect.read_channel()
         try:
             hostoutput.write(output)
