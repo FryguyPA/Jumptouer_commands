@@ -178,8 +178,8 @@ def runcommand(net_connect, device, hostoutput, commandlist):
         hostoutput.write('\n' + '-' * 20 + '\n')
         hostoutput.write(command)
         output = net_connect.write_channel(f'ssh {device} \n')
+        sleep(3)
         output = net_connect.read_channel()
-
         try:
             hostoutput.write(output)
         except:
